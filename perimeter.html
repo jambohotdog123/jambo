@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math World - Perimeter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"> Math World</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="diameter.html">Diameter</a></li>
+                <li><a href="area.html">Area</a></li>
+                <li><a href="volume.html">Volume</a></li>
+                <li><a href="perimeter.html" class="active">Perimeter</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Perimeter Calculators</h2>
+        <div class="grid">
+            <div class="card">
+                <h2>Rectangle Boundary</h2>
+                <div class="formula-box">P = 2(l + w)</div>
+                <div class="input-group"><label>Length Segment:</label><input type="number" id="pRectL"></div>
+                <div class="input-group"><label>Width Segment:</label><input type="number" id="pRectW"></div>
+                <button class="calc-btn" onclick="getRectPerim()">Solve</button>
+                <div class="result-box" id="pRectRes">Total Perimeter: -</div>
+            </div>
+            <div class="card">
+                <h2>Square Boundary</h2>
+                <div class="formula-box">P = 4s</div>
+                <div class="input-group"><label>Side Width:</label><input type="number" id="pSqS"></div>
+                <button class="calc-btn" onclick="getSquarePerim()">Solve</button>
+                <div class="result-box" id="pSqRes">Total Perimeter: -</div>
+            </div>
+            <div class="card">
+                <h2>Triangle Boundary</h2>
+                <div class="formula-box">P = a + b + c</div>
+                <div class="input-group"><label>Side A Width:</label><input type="number" id="pTriA"></div>
+                <div class="input-group"><label>Side B Width:</label><input type="number" id="pTriB"></div>
+                <div class="input-group"><label>Side C Width:</label><input type="number" id="pTriC"></div>
+                <button class="calc-btn" onclick="getTrianglePerim()">Solve</button>
+                <div class="result-box" id="pTriRes">Total Perimeter: -</div>
+            </div>
+            <div class="card">
+                <h2>Circle Boundary (Circumference)</h2>
+                <div class="formula-box">C = 2 × π × r</div>
+                <div class="input-group"><label>Radius Measure:</label><input type="number" id="pCircR"></div>
+                <button class="calc-btn" onclick="getCircleCircumference()">Solve</button>
+                <div class="result-box" id="pCircRes">Circumference: -</div>
+            </div>
+            <div class="card">
+                <h2>Parallelogram Boundary</h2>
+                <div class="formula-box">P = 2(a + b)</div>
+                <div class="input-group"><label>Side Segment A:</label><input type="number" id="pParaA"></div>
+                <div class="input-group"><label>Side Segment B:</label><input type="number" id="pParaB"></div>
+                <button class="calc-btn" onclick="getParaPerim()">Solve</button>
+                <div class="result-box" id="pParaRes">Total Perimeter: -</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

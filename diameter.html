@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math World - Diameter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"> Math World</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="diameter.html" class="active">Diameter</a></li>
+                <li><a href="area.html">Area</a></li>
+                <li><a href="volume.html">Volume</a></li>
+                <li><a href="perimeter.html">Perimeter</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Diameter & Circle Metrics</h2>
+        <div class="grid">
+            <div class="card">
+                <h2>Circle Diameter & Circumference</h2>
+                <div class="formula-box">d = 2r & C = 2πr</div>
+                <div class="input-group">
+                    <label>Radius Input (r):</label>
+                    <input type="number" id="radiusInput" placeholder="Enter radius value">
+                </div>
+                <button type="button" class="calc-btn" onclick="getDiameter()">Solve Formula</button>
+                <div class="result-box" id="diameterDemo">Diameter (d): -</div>
+                <div class="result-box" id="circDemo">Circumference (c): -</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
